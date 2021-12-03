@@ -1,0 +1,122 @@
+.hero {
+    margin-bottom: 5.6rem;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    flex-basis: 50%;
+}
+.img-hero {
+    flex-basis: 50%;
+}
+
+.img-familly {
+    width: 100%;
+}
+
+.hero-p {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    color: #588bc7;
+    font-weight: 500;
+}
+
+/* POINTS */
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    max-height: 10rem;
+    border-radius: 1rem;
+}
+
+.point {
+    padding: 3rem 1.5rem;
+}
+
+.point-p {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.point-ticker {
+    background-color: #fff;
+    border: 2px solid #588bc7;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+
+/* APPLY LOAN FORM */
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-apply {
+    color: #fff;
+    background-color: #049b82;
+    border: 1px solid #049b82;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 100rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+    margin-right: 1rem;  
+}
+
+.input-auth {
+    padding: 0.2rem 2rem;
+    border: 1px solid #555;
+    border-radius: 7px;
+}
+
+.dynamic-field {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+.dynamic-representation {
+    max-height: 5rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.form-cta {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.message {
+    width: 100%;
+}
+
+.message-p {
+    font-size: 2rem;
+    color: #588bc7;
+}
+

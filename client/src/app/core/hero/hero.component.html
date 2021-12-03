@@ -1,0 +1,62 @@
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="info">
+                <h1 class="heading-secondary">
+                    Кредити от 100 до 10 000 за минути
+                </h1>
+                <p class="hero-p">
+                    Вземи своя кредит още днес. За повече информация тук
+                </p>
+                <div class="hero-apply">
+                    <!-- check what fields we need to add here later on -->
+                    <form class="apply-form" [formGroup]="form" (ngSubmit)="requestLoan()">
+                        <div class="row">
+                            <div class="form-field">
+                                <label class="form-label" for="username">Сума</label>
+                                <input class="input-auth" type="number" id="suma" name="suma" formControlName="sum"
+                                  >
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label" for="username">Период</label>
+                                <input class="input-auth" type="number" id="time" name="time" formControlName="period"
+                                >
+                            </div>
+                        </div>
+                        <div class="dynamic-field">
+                            <span class="form-label">Месечна Вноска</span>
+                            <div class="dynamic-representation"><span *ngIf="monthlyAmount">{{monthlyAmount.toFixed(2)}} лв.</span></div>
+                        </div>
+                      
+                        <div class="form-cta">
+                            <button class="btn-apply">Кандидатсвай</button>
+                            <div *ngIf="appliedForLoan">
+                                <app-spinner></app-spinner>
+                            </div>
+                        </div>
+                       <div class="message" *ngIf="decision">
+                           <p class="message-p">{{decision}}</p>
+                       </div>
+                    </form>
+                </div>
+            </div>
+            <div class="img-hero">
+                <img class="img-familly" src="../../../assets/hero-img.png" alt="fastloan-familly-image">
+            </div>
+        </div>
+        <div class="points">
+            <div class="point">
+                <p class="point-p">
+                    <span class="point-ticker">&check;</span>
+                    Безплатна оферта без зaдължения
+                </p>
+            </div>
+            <div class="point">
+                <p class="point-p"><span class="point-ticker">&check;</span>Одобрение до минути</p>
+            </div>
+            <div class="point">
+                <p class="point-p"><span class="point-ticker">&check;</span>Получаваш кредита същия ден</p>
+            </div>
+        </div>
+    </div>
+</section>

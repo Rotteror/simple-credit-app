@@ -1,0 +1,88 @@
+/********************/
+/* LOGIN COMPONENT */
+
+
+.forms-heading {
+    margin: 8.2rem auto;
+    letter-spacing: -1.5px;
+    align-self: center;
+    text-align: center;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+
+    border-radius: 9px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08) ;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.btn-login {
+    padding: 0.6rem 2.4rem;
+    margin-bottom: 2.4rem;
+    
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 17.3rem;
+    border-radius: 9px;
+    border: none;
+    color: #fff;
+    background-color: #049b82;
+
+    transition: all 0.5s;
+}
+
+
+.btn-login:hover, .btn-login:active {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.input-auth {
+    height: 4rem;
+    width: 30rem;
+    padding: 1.3rem 2rem;
+    border: 1px solid #555;
+    border-radius: 7px;
+}
+
+
+.form-label {
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+
+.p-auth-info {
+    font-size: 1.6rem;
+    margin: 2.4rem 0;
+}
+
+.link-auth:link, .link-auth:visited {
+    text-decoration: none;
+    align-items: center;
+    color: #588bc7;
+
+    transition: all 0.5s;
+}
+
+.link-auth:hover, .link-auth:active {
+   color: #36af9b;
+}
+
+.error {
+    font-size: 1.6rem;
+    color: #ff6b6b;
+    font-weight: 400;
+}

@@ -1,0 +1,31 @@
+<section class="section-login">
+    <div class="container">
+        <h2 class="heading-primary forms-heading">Вход</h2>
+    </div>
+    <div class="container">
+        <form class="login-form" [formGroup]="form" (ngSubmit)="loginHandler()">
+            <div class="form-container">
+                <label class="form-label" for="username">Username</label>
+                <input class="input-auth" type="text" id="username" formControlName="username">
+                <ng-container *ngIf="form.get('username')?.touched">
+                    <p *ngIf="form.get('username')?.errors?.required" class="error">
+                        Потребителско име е задължително
+                    </p>
+                </ng-container>
+            </div>
+            <div class="form-container">
+                <label class="form-label" for="password">Password</label>
+                <input class="input-auth" type="password" formControlName="password">
+                <ng-container *ngIf="form.get('password')?.touched">
+                    <p *ngIf="form.get('password')?.errors?.required" class="error">
+                        Парола е задължителна
+                    </p>
+                </ng-container>
+            </div>
+            <div class="btn form-container">
+                <button class="btn-login">Вход</button>
+            </div>
+        </form>
+        <p class="p-auth-info">Направи своята регистрация -><a class="link-auth" href="#">Тук</a></p>
+    </div>
+</section>
