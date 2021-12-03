@@ -1,7 +1,7 @@
 /* #e8f1ff */
 .section-footer {
     background-color: #e8f1ff;
-    max-height: auto !important;
+    height: 20rem;
 }
 
 .footer-p {
@@ -12,7 +12,6 @@
 
 .footer-nav {
     text-align: center;
-    
 }
 
 .footer-list {
